@@ -1,0 +1,70 @@
+/*-------------- nav bar style ---------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #424242
+    ;
+}
+
+/*----------------- banner section style--------------- */
+
+
+
+/*------------- Features Style-------------- */
+
+.features{
+    display: flex;
+}
+.team-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+/*---------------- experience Style---------------- */
+
+.experience-section{
+    display: flex;
+}
+.experience-details{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+/*------------------- Fact Section Style------------------ */
+
+.facts-box-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .facts-box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+} */
+
+
+/*------------ sponsors styles------------ */
+
+.sponsor-logo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*-------------- footer style------------------ */
+
+.footer{
+    background-color: bisque;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
