@@ -1,39 +1,184 @@
-/*-------------- nav bar style ---------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-nav {
+/* Google Fonts  */
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@500&display=swap');
+</style>
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+body{
+    background-color: lightblue;
+}
+
+
+
+/*-------------- nav bar style ---------*/
+.site-logo a{
+    font-size: 35px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: #424242
+}
+header{
+    background-color:antiquewhite;
+    width: 100%;
+}
+.header-area{
+    width: 1080px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.logo, li a{
+    text-decoration: none;
+    color: #424242
+}
+
+nav{
     display: flex;
     justify-content: space-between;
 }
-nav a{
-    text-decoration: none;
-    color: #424242
-    ;
+.nav-menu ul{
+    display: flex;
+    gap: 50px;
+}
+ul li{
+    list-style: none;
 }
 
+
 /*----------------- banner section style--------------- */
+
+.banner-section{
+    background-color:antiquewhite;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.banner{
+    text-align: center;
+}
+.banner-details h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.banner-details p{
+    margin: 20px 0;
+}
+.banner-details a{
+    margin-bottom: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-explore{
+    padding: 15px 30px;
+    background:orange;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 190px;
+}
+.banner-image img{
+    width: 900px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+
 
 
 
 /*------------- Features Style-------------- */
-
-.features{
+.feature-section{
     display: flex;
 }
-.team-image {
+.feature-image{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
+.single-img img{
+    width: 250px;
+    
+}
+.feature-text{
+    width: 540px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 70px;
+}
+.feature-text h3{
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 700px;
+}
+.feature-text p{
+    margin-bottom: 20px;
+}
+
 
 /*---------------- experience Style---------------- */
 
 .experience-section{
     display: flex;
+    gap: 5%;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .experience-details{
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    width: 600px;
+    height: 200px;
+}
+.experience-card{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px greenyellow;
+}
+.experience-card h4{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.experience h2{
+    margin: 30px 0 20px;
+    border-left: 5px solid #d8c306;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.experience{
+    width: 100%;
+    margin-left: 30px;
+    padding: 20px;
+}
+.architect-image{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.architect-image img{
+    width: 500px;
 }
 
 /*------------------- Fact Section Style------------------ */
@@ -42,29 +187,69 @@ nav a{
     display: flex;
     justify-content: space-evenly;
 }
-
-/* .facts-box{
-    height: 200px;
+.facts-box{
+    text-align: center;
     width: 200px;
+    height: 150px;
     border: 1px solid #FF900E;
-    border-radius: 8px;
-} */
+    padding: 20px;
+}
+.fact-text{
+    margin-left: 70px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.fact-text h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.fact-text p{
+    width: 400px;
+    margin-bottom: 5px;
+}
+.facts-box-container{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 
 
 /*------------ sponsors styles------------ */
 
+.sponsor-details{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sponsor-details h3{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sponsor-details p{
+    color: #727272;
+    
+}
+
 .sponsor-logo{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+.logo{
+    width: 100px;
 }
 
 /*-------------- footer style------------------ */
 
-.footer{
+.footer-section{
     background-color: bisque;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-bottom: 100px;
+    width: 700px;
+    margin-left: 200px;
+    height: 50px;
+    padding: 15px;
 }
