@@ -195,6 +195,12 @@ ul li{
     border: 1px solid #FF900E;
     padding: 20px;
 }
+.facts-box:hover{
+    transform: rotate(20deg);
+    background-color: #d8c306;
+}
+
+
 .fact-text{
     margin-left: 70px;
     margin-bottom: 50px;
@@ -238,6 +244,10 @@ ul li{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 70px;
+}
+.sponsor-logo img:hover{
+    transform:rotate(-20deg);
+    background-color: deeppink;
 }
 .logo{
     width: 100px;
